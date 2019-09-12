@@ -1,0 +1,90 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 2
+   
+   Bike the Mountains Tour Style Sheet
+   Author: Jeremiah Ruiz   
+   Date:   9-12-19
+   
+   Filename: mw_styles.css
+
+*/
+@charset "utf-8";
+/* Structural Styles */
+
+html{
+    background-color: rgb(173, 189, 227);
+}
+body{
+    background-color: rgb(227, 210, 173);
+    font-family: fantasy, sans-serif
+}
+body > footer{
+    background-color: rgb(208, 184, 109);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+address{
+    font: normal;
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+/* Heading Styles */
+
+h1, h2{
+    font-weight: normal
+}
+
+/* Navigation Styles */
+
+nav > ul{
+    line-height: 2em;
+    font-size: 0.9em;
+    list-style: none;
+}
+nav a:link, nav a:visited{
+    text-decoration: none;
+    color: rgb(43, 59,125);
+}
+Nav a:active, nav a:hover{
+    color: rgb(215, 35, 35)
+}
+
+/* Article Styles */
+article#tour_summary > h1{
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+article#tour_summary > p:first-of-type::first-line{
+    font-size: 1.2em;
+    font-variant: small-caps
+}
+
+
+
+/* Aside Styles */
+#tour_intinerary h2{
+    font-size: 0.8em;
+}
+#tour_intinerary h1{
+    font-size: 1.2em
+}
+#tour_intinerary p{
+    font-size: 0.8em
+}
+
+#tour_intinerary p:nth-last-of-type(odd), h2:nth-last-of-type(odd){
+    color: rgb(75, 91, 40)
+}
+#tour_intinerary p:nth-last-of-type(even), h2:nth-last-of-type(even){
+    color: rgb(81, 95, 175);
+}
+/* Blockquote Styles */
+blockquote{
+    background-color: rgb(173, 189, 227);
+    color: rgb(255, 255, 255);
+    opacity: .65;
+}
