@@ -12,10 +12,11 @@
 */
 @charset "utf-8";
 /* Structural Styles */
-
+/* This changes the entires websites backround to the selected color*/
 html{
     background-color: rgb(173, 189, 227);
 }
+/*this changes the backround of the body to the selected color.*/
 body{
     background-color: rgb(227, 210, 173);
     font-family: fantasy, sans-serif
@@ -25,6 +26,7 @@ body > footer{
     padding-bottom: 5px;
     padding-top: 5px;
 }
+/*address font and padding is adjusted to the sizes and spacing selected*/
 address{
     font: normal;
     font-size: 0.9em;
@@ -34,21 +36,24 @@ address{
 }
 /* Heading Styles */
 
+/* Made the heading h1 and h2 weight normal so it doesnt look to bold.*/
 h1, h2{
     font-weight: normal
 }
 
 /* Navigation Styles */
-
+/* makes the nav ul sizes and turns off the bullets point*/
 nav > ul{
     line-height: 2em;
     font-size: 0.9em;
     list-style: none;
 }
+/* takes the lines under the hyperlinks off*/
 nav a:link, nav a:visited{
     text-decoration: none;
     color: rgb(43, 59,125);
 }
+/* changes the color to the selected color*/
 Nav a:active, nav a:hover{
     color: rgb(215, 35, 35)
 }
@@ -66,6 +71,7 @@ article#tour_summary > p:first-of-type::first-line{
 
 
 /* Aside Styles */
+/* changes all the Id's to the leected font size and only affects those id's.*/
 #tour_intinerary h2{
     font-size: 0.8em;
 }
@@ -75,7 +81,7 @@ article#tour_summary > p:first-of-type::first-line{
 #tour_intinerary p{
     font-size: 0.8em
 }
-
+/* all the even and odd list or id's are changed to the color selected for the even or odds*/
 #tour_intinerary p:nth-last-of-type(odd), h2:nth-last-of-type(odd){
     color: rgb(75, 91, 40)
 }
@@ -83,8 +89,16 @@ article#tour_summary > p:first-of-type::first-line{
     color: rgb(81, 95, 175);
 }
 /* Blockquote Styles */
+/* the colors of the backround for the quoted words are changed to the selected rgb color.*/
 blockquote{
     background-color: rgb(173, 189, 227);
     color: rgb(255, 255, 255);
     opacity: .65;
+}
+/* spacing of the quote is adjusted to the selected spacing*/
+blockquote p{ 
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
